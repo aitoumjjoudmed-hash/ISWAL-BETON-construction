@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+  margin-top:70px
+}
+
+.container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content{
+  float: left;
+  width: 55%;
+}
+
+.image {
+  float: right;
+  width: 40%;
+  position:relative;
+  top:-250px;
+  right:-500px;
+  
+  
+}
+.title {
+  text-transform: uppercase;
+  font-size: 29px;
+}
+.content{
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.content h3 {
+  margin-top: 20px;
+  color: #5d5d5d;
+}
+
+
