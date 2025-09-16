@@ -1,0 +1,65 @@
+
+{% extends 'base2.html' %}
+{%block body%}
+<div class="contact_us">
+ <h1 class="C1">Connectez-vous avec nous</h1>
+ <h2 class="C2">Nous aimerions répondre à vos questions et vous aider à réussir.</h2>
+ <h2 class="C3">N’hésitez pas à prendre contact avec nous.</h2>
+</div>
+<div class="box">
+    <div class="box_L">
+        <h3 class="title_L">Contactez-nous</h3> 
+        <table>
+            <tr>
+                <td>✉️Email:</td>
+                <td>Iswalbeton@gmail.com</td>
+            </tr>
+            <tr>
+                <td>téléphone:</td>
+                <td>+2126 76 17 81 03</td>
+                
+            </tr>
+            <tr>
+                <td>Whatsapp:</td>
+                <td>+2126 76 17 81 03</td>
+            </tr>
+        </table>      
+    </div>
+    <div class="box_R">
+        <h3 class="title_R">Envoyez votre demande</h3>
+         <form  action="{{ url_for('send_email') }}" method="POST">
+            <div class="inputs">
+                <div class="I">
+                    <label >NOM</label>
+                    <input type="text" placeholder="ALI" name="name">
+                </div>
+                <div class="I">
+                    <label >Téléphone</label>
+                    <input type="text" placeholder="+212693713585" name="Téléphone" required>
+                </div>
+                <div class="inputs">
+                <div class="I">
+                    <label >Email</label>
+                    <input type="email" value="@gmail.com" name="email" required>
+                </div>
+                <div class="I">
+                    <label >Sujet</label>
+                    <input type="text" name="Sujet">
+                </div>
+            </div>
+            <div class="textarea">
+            <label >Message</label>
+            <textarea rows="5" cols="42" placeholder="écrire ton message" name="message" required></textarea> 
+            <button type="submit">envoyer</button>
+        </div>
+        </form> 
+        
+        
+
+    </div>
+    
+    
+</div>
+ {% endblock %}
+
+ 
