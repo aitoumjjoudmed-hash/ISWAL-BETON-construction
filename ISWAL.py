@@ -26,6 +26,24 @@ def Services():
 @ISWAL.route("/Projects")
 def Projects():
    return render_template("Projects.html", title="Projects",custo_css="Projects")
+@ISWAL.route("/album1")
+def album1():
+  return render_template("album1.html",title="album1",custo_css="album")
+@ISWAL.route("/album2")
+def album2():
+  return render_template("album2.html",title="album2",custo_css="album")
+@ISWAL.route("/album3")
+def album3():
+  return render_template("album3.html",title="album3",custo_css="album")
+@ISWAL.route("/album4")
+def album4():
+  return render_template("album4.html",title="album4",custo_css="album")
+@ISWAL.route("/album5")
+def album5():
+  return render_template("album5.html",title="album5",custo_css="album")
+@ISWAL.route("/album6")
+def album6():
+  return render_template("album6.html",title="album6",custo_css="album")
 @ISWAL.route("/Contact")
 def Contact():
   return render_template("Contact.html",title="Contact",custo_css="Contact")

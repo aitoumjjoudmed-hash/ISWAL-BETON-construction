@@ -1,14 +1,15 @@
 
 .contact_us{
-    padding-top: 170px;
+    padding-top: 90px;
     padding-left:60px;
-    padding-bottom:40px
+    padding-bottom:10px
 }
 .box{
     display:flex;
     padding-left:30px;
     padding-right:30px;
-    height:500px
+    height:auto;
+    width:auto
 }
 .box_R{
     flex-basis:60%;
@@ -27,29 +28,29 @@
     background-color:black;
     border-top-left-radius:25%;
     border-bottom-right-radius:25px;
-    text-align:center
+    
 }
 .title_L{
-    margin-top:60px;
-    font-size:30px
+    margin-bottom:20px;
+    font-size:30px;
+    text-align:center
 }
 
 label {
   display: block;   
-  margin-bottom: 2px; 
     font-size:20px
 }
 input{
     width:290px;
-    height:40px;
+    height:18px;
     border: none;
     outline:none;
     border-bottom: 1px solid;
-    padding-bottom: 5px;
+    padding-bottom: px;
 }
 textarea{
     width:100%;
-    height:50px
+    height:30px
 }
 button{
     background-color:white;
@@ -66,11 +67,19 @@ button:hover{
     font-weight:bold
 }
 table{
-    padding-top:50px;
     font-size:30px;
-    padding-top:150px
+    padding-top:10px
 }
 td{
-    padding-right:5px;
-    padding-bottom:15PX
+    padding-bottom:35PX;
+    
+}
+i{
+    cursor: pointer;
+    font-size: 25px;
+}
+i:hover {
+  color: green;
+
+  
 }

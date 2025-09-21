@@ -9,9 +9,18 @@
   {% if custo_css%}
    <link rel="stylesheet" href="{{ url_for('static',filename='css/'+custo_css+'.css')}}"/>
   {%endif%}
+  <!-- Font Awesome 6 (latest CDN) for check btn in navbar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- MAKE THE WEEBSITE ADAPT TO ALL SCREEN NOT ENOGH!!!!!!!! -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body >
     <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
         <h2 class="logo">ISWAL-BETON</h2>
         <nav class="navbar">
             <a href="{{ url_for('Accueil') }}">Accueil</a>

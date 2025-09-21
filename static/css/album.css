@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gallery{;
+    padding-top: 95px;
+    padding-left: 20px;
+     padding-right: 20px;
+       
+   
+}
+.IMAGES{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    grid-template-rows: repeat(2,auto);
+    gap:1px 80px;
+     place-items:start
+}
+.des{
+text-align: center;
+color: #fff;
+opacity: 1;
+
+}
+.i{
+    width:90%
+}

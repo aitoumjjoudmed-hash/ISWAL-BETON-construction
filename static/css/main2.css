@@ -18,11 +18,13 @@ header{
   background-color:black;
   display: flex;
   justify-content: space-between;
+  align-items:center
 }
 .logo{
     color:white;
     font-size: 35px;
     user-select: none;
+    letter-spacing:3px
 }
 .navbar a{
     position:relative;
@@ -37,17 +39,67 @@ header{
   content: "";
   position: absolute;
   width: 0%;
-  height: 0px;
+  height: 3px;
   background-color:white;
   border-radius: 5px;
   left:0;
   bottom:-5px;
   transition:  1s ease;
 }
-.navbar a:hover::after {
-  height: 3px; 
+.navbar a:hover::after { 
   width: 100%;             
 }
+.checkbtn{
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+  position:relative;
+  right:-1120px;
+  display:none
+}
+/* Cache l'élément ayant l'ID "check" */
+#check {
+  display: none;
+}
+
+/* Styles appliqués uniquement pour les écrans dont la largeur est au maximum de 990px */
+/* Styles appliqués uniquement pour les écrans <= 990px */
+@media screen and (max-width: 990px) {
+
+  /* Affiche le bouton hamburger */
+  .checkbtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  
+
+  /* Cache la navbar au début */
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Quand le checkbox est coché → on affiche le menu */
+  #check:checked ~ .navbar {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 15px 0;
+  }
+}
+
+
+
 body {
      background-color: #ddd;  
 }
@@ -55,4 +107,3 @@ body {
     background-color:blue;
     color:white
 }
-

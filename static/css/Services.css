@@ -12,7 +12,7 @@
     margin-top:170px;
     
 }
-.services h1{
+.services title{
     text-align:center;   
     display:inline
     
@@ -22,7 +22,8 @@
     height:370px;
     margin-top:60px;
     margin-right:35px;
-    background-color:#d8Db1d; 
+    background-color:black; 
+    color:white;
     border-radius:19px
     
 }
@@ -36,12 +37,12 @@
 .card p{
     font-size:20px;
     font-weight:500;
-    transition:all 2s ease
+    transition:all 1s ease
     
 }
 .card:hover{
-    color:#d8Db1d;
-    background-color:black;
+    color:black;
+    background-color:white;
     width:330px;
     height:375px;
     box-shadow: 5px 5px 15px black;

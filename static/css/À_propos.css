@@ -14,27 +14,33 @@
 
 .container {
   width: 80%;
-  display: block;
+  display: inline-block;
   margin: auto;
   padding-top: 100px;
 }
 .content{
   float: left;
   width: 55%;
+  padding-left:80px
 }
 
 .image {
   float: right;
   width: 40%;
-  position:relative;
-  top:-250px;
-  right:-500px;
+  position:fixed;
+  top:36%;
+  right:0%;
   
   
+}
+.image:hover{
+  opacity:0.6;
+  cursor:pointer
 }
 .title {
   text-transform: uppercase;
   font-size: 29px;
+  padding-left:80px
 }
 .content{
   text-transform: uppercase;
@@ -45,5 +51,11 @@
   margin-top: 20px;
   color: #5d5d5d;
 }
-
-
+@media screen and (max-width: 607px) {
+  .image {
+  
+  position:relative;
+   padding-top:20px;
+  
+        }
+}
