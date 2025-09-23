@@ -68,4 +68,5 @@ def send_email():
         return redirect(url_for('Contact'))
 
 if __name__ == "__main__":
-  ISWAL.run(host="0.0.0.0",debug=True, port=9000)
+  #host="0.0.0.0" ,debug=True, port=9000
+  ISWAL.run()
